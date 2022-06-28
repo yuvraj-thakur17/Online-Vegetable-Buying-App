@@ -23,7 +23,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/tv_hiYuvraj"
@@ -42,14 +42,13 @@
                     android:id="@+id/tv_subHeading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:text="Order vegetables online"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="@id/tv_hiYuvraj"
-                    app:layout_constraintStart_toStartOf="@id/tv_hiYuvraj"
-                    app:layout_constraintTop_toBottomOf="@id/tv_hiYuvraj" />
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_hiYuvraj"
+                    tools:ignore="MissingConstraints" />
 
                 <ImageView
                     android:id="@+id/profile_pic"
@@ -221,11 +220,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="BottomAppBar">
 
             <LinearLayout
+                android:layout_marginRight="24dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:id="@+id/homeButton"
