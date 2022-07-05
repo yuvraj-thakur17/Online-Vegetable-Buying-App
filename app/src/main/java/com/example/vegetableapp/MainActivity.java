@@ -16,20 +16,12 @@ public class MainActivity extends AppCompatActivity {
 //    private RecyclerView.Adapter adapter;
 //    private RecyclerView recyclerViewCategoryList;
 
-    //test
-    ImageView profilepic;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 //        recyclerViewCategory();
-
-        //test
-        profilepic=findViewById(R.id.profile_pic);
-        Intent intent=new Intent(MainActivity.this,ProjectDetailsActivity.class);
-        startActivity(intent);
 
     }
 
